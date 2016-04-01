@@ -2388,3 +2388,54 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-01 09:32:46 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=true&ratings%5BPG-13%5D=true&ratings%5BR%5D=true&ratings%5BNC-17%5D=true&commit=Refresh" for 127.0.0.1 at 2016-04-01 09:57:54 -0700
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"true", "PG-13"=>"true", "R"=>"true", "NC-17"=>"true"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (43.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG', 'PG-13', 'R', 'NC-17')
+  Rendered movies/index.html.haml within layouts/application (285.6ms)
+Completed 200 OK in 1048.1ms (Views: 595.9ms | ActiveRecord: 43.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-01 09:57:55 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-01 09:57:55 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-01 09:57:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-01 09:57:55 -0700
+Served asset /application.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2016-04-01 09:58:01 -0700
+Served asset /rails.png - 304 Not Modified (1868ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-04-01 09:58:05 -0700
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 21.6ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-01 09:58:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-01 09:58:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-01 09:58:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-01 09:58:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
